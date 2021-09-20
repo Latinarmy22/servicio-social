@@ -1,0 +1,535 @@
+/* globales */
+
+
+
+/*  */
+
+html {
+  background-color: #f3f3f3,;
+}
+
+div.barra {
+    background-color: #fff;
+    padding:20px 0;
+  }
+  
+div.logo{
+  position: absolute;
+}
+  .float-right{
+    float: right;
+  }
+
+  .float-left{
+    float: left;
+  }
+
+  .button{
+    background-color: #5EAABF;
+    padding: 10px 40px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all .3s ease;
+    border: 2px solid #f3f3f3;
+  }
+nav.navegacion-principal {
+    display: none;
+  }
+  nav.navegacion-principal a {
+    font-family: 'Oswald', sans-serif;
+    color:black;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .6s ease;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav.navegacion-principal a:hover {
+    background-color: #5EAABF;
+    color: #fff;
+  }
+  
+  nav.navegacion-principal a:last-child {
+    border: 2px solid #5EAABF;
+    color: #000;
+  }
+  nav.navegacion-principal a:last-child:hover {
+    color: white;
+  } 
+  @media only screen and (min-width:768px) {
+    nav.navegacion-principal a {
+      margin-right: 10px;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+  }
+  @media only screen and (min-width:768px) {
+    nav.navegacion-principal {
+      width: 67%;
+      float: right;
+      text-align: right;
+      display: block;
+    }
+    nav.navegacion-principal a {
+      margin-right: 10px;
+      padding: 10px 10px;
+      display: inline-block;
+      width: auto;
+      display: inline-block;
+      text-align: center;
+      margin:0 10px 0 0;
+    }
+  }
+
+  div.hero {
+    background-image: url(../img/sliderF.png);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+  }
+  
+  section.info{
+    position: relative;
+  }
+
+  div.contenedorimagen{
+    background-image: url(../img/Recurso\ 1.png);
+    height: 500px;
+    background-position: top center;
+    background-size: auto;
+  }
+
+  div.informacion{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+  }
+
+  div.informacion h3{
+    color: #373660;
+    margin-top: 125px;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  div.informacion p {
+    font-size: 1.5rem;
+  }
+
+  .proyectos, .galeria{
+    height: 100%;
+    width: 45%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+
+  .container h3{
+    color: #333333;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+
+.container{
+  background-color: #DEEEF0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content:center;
+}
+.titulo{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #373660;
+}
+
+.cuadro{
+  height: 400px;
+  width: 500px;
+  background-color: #5EAABF;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 50px;
+  border: 5px solid #373660;
+}
+
+.infocor{
+  background-image: url(../img/fondoinfo.png);
+  background-size: cover;
+}
+
+.texto{
+  color: #4D4D4D;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: auto;
+}
+
+.infocorporativa h3{
+  color: #373660;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.infocorporativa{
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+  margin: auto;
+}
+
+.mision, .vision{
+  background-color: #6FB1C1;
+  margin: 15px;
+  font-family: 'Oswald', sans-serif;
+  color: #4D4D4D;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.conocemas{
+  background-color: #43436D;
+  display: flex;
+  justify-content: center;
+}
+
+.infocontacto h3 {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.infocontacto p{
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.iconoscontacto img{
+  height: 200px;
+  transform: translateX(80px);
+}
+
+.email{
+  font-size: 1.2rem;
+  border: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.proyectospage{
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.proyectospage h1{
+  font-size: 3rem;
+  font-family: 'Oswald' sans-serif;
+  font-weight: bold;
+  color:#43436D;
+  text-align: center;
+}
+
+.proyectospage h3{
+  text-align: center;
+  color: #373660;
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.proyectospage p {
+  text-align: justify;
+}
+
+.tablaproyectos{
+  display: flex;
+}
+
+.marco{
+  border: 7px solid #5EAABF;
+}
+
+.proyecto{
+  margin: 80px;
+  margin-top: 20px;
+}
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+  margin: auto;
+  transform: translateX(150px);
+}
+
+.banner h3{
+  color: #373660;
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.frase{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  color: #4D4D4D;
+}
+
+.parrafo h3 p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.parrafo h3{
+  color: #373660;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.parrafo p{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  color: #4D4D4D;
+  text-align: center;
+}
+
+.buttonS{
+  text-decoration: none;
+  font-family: 'Oswald',sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: #373660;
+  color: #fff ;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  transform: translateX(550px);
+}
+
+.buttonS:hover{
+  padding: 30px;
+  transition: ease-in-out .5s;
+}
+
+  /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
